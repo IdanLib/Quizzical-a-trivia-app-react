@@ -111,7 +111,7 @@ export default function Questions(props) {
     });
 
     return (
-        <div className="questions-container app with-blobs">
+        <div className="questions-container with-blobs">
             {isLoaded
                 ? <div className="all-questions-comp">  {QuestionComponentsArr}
                 </div>

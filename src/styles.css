@@ -8,10 +8,6 @@ body {
   background-color: #F5F7FB;
 }
 
-.app {
-  height: 100vh;
-}
-
 .with-blobs {
   background: url(/blob1.png) right -20vh top -20vh no-repeat, url(/blob2.png) left -20vh bottom -10vh no-repeat, url(/blob3.png) right -15vh bottom -10vh no-repeat;
 }
@@ -63,6 +59,8 @@ body {
 }
 
 .questions-container {
+  height: 100vh;
+  min-height: -webkit-fill-available;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -190,6 +188,11 @@ option {
   .start-page {
     text-align: center;
     padding: 0 15px;
+  }
+
+  .questions-container {
+    height: 100%;
+    min-height: -webkit-fill-available;
   }
 
   .ans-btn {
